@@ -2,6 +2,8 @@
 
 MediBot is an intelligent, empathetic AI-powered medical chatbot that uses **Google Gemini Pro** for natural language responses and the **Gale Encyclopedia of Medicine** as its knowledge base. It leverages document clustering and retrieval-augmented generation (RAG) to deliver reliable, safe, and clear answers to health-related queries — all within a ChatGPT-style modern UI.
 
+https://medibot-ai.netlify.app
+
 ---
 
 ## 🌟 Features
