@@ -1,73 +1,55 @@
-# Welcome to your Lovable project
+# 🧠 MediBot — AI Medical Assistant Powered by Google Gemini
 
-## Project info
+MediBot is an intelligent, empathetic AI-powered medical chatbot that uses **Google Gemini Pro** for natural language responses and the **Gale Encyclopedia of Medicine** as its knowledge base. It leverages document clustering and retrieval-augmented generation (RAG) to deliver reliable, safe, and clear answers to health-related queries — all within a ChatGPT-style modern UI.
 
-**URL**: https://lovable.dev/projects/e579c9d6-1076-41ff-ae07-d676d214fc30
+---
 
-## How can I edit this code?
+## 🌟 Features
 
-There are several ways of editing your application.
+- 🧬 **LLM Powered by Google Gemini Pro**
+- 📚 **Medical Knowledge from Gale Encyclopedia**
+- 🧠 **Topic Clustering for Efficient Retrieval**
+- 💬 **ChatGPT-Style Interface with History & Markdown**
+- 🩺 **Symptom Checker (Optional UI Panel)**
+- 🌙 **Dark/Light Mode Support**
+- 📦 **Frontend: React + Tailwind | Backend: FastAPI/Flask**
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e579c9d6-1076-41ff-ae07-d676d214fc30) and start prompting.
+## 🛠️ Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+| Layer       | Tech Used             |
+|-------------|------------------------|
+| Frontend    | React, Tailwind CSS, Framer Motion |
+| Backend     | FastAPI / Flask (configurable)     |
+| LLM         | Google Gemini Pro via API |
+| Embeddings  | OpenAI / Cohere (optional) |
+| Clustering  | K-Means / DBSCAN |
+| Storage     | JSON / Firebase / MongoDB (optional) |
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## ⚙️ How It Works
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. **Data Ingestion**  
+   Upload and preprocess the Gale Encyclopedia data (PDF/CSV/Text).
 
-Follow these steps:
+2. **Semantic Clustering**  
+   Use embedding + clustering (e.g., K-Means) to organize content by topic.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+3. **RAG Pipeline**  
+   - Convert user query into embedding.
+   - Retrieve top matching cluster.
+   - Select relevant docs.
+   - Inject into prompt and call Gemini API.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+4. **Frontend Interaction**  
+   - Clean, modern UI mimicking ChatGPT.
+   - Sidebar with topic suggestions & recent queries.
+   - Answers appear with typing animation and markdown rendering.
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
+⚠️ Disclaimer
+MediBot does not provide medical advice, diagnosis, or treatment. Always consult a licensed healthcare provider for any health concerns.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/e579c9d6-1076-41ff-ae07-d676d214fc30) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
